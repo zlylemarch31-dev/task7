@@ -1,0 +1,111 @@
+/* --- COLOR VARIABLES --- */
+:root {
+    --byy-blue: #2b449b;
+    --byy-light: #3a86ff;
+    --byy-white: #ffffff;
+}
+
+/* --- GLOBAL STYLES --- */
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f0f2f5;
+    scroll-behavior: smooth;
+}
+
+/* --- NAVIGATION & HAMBURGER --- */
+.navbar {
+    background-color: white !important;
+    border-bottom: 3px solid var(--byy-blue);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+/* Custom Hamburger Icon (Blue) */
+.navbar-toggler {
+    border-color: var(--byy-blue);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(43, 68, 155, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* --- HERO SECTION & PROFILE PIC --- */
+.hero-section {
+    padding: 100px 0;
+    background: var(--byy-white);
+    overflow: hidden;
+}
+
+.profile-frame {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    background: white;
+    border: 3px solid var(--byy-blue);
+    transform: rotate(-3deg);
+    box-shadow: 10px 10px 0px var(--byy-light);
+    transition: 0.3s;
+}
+
+.profile-frame:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.profile-frame img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+/* --- SLANTED BLUE BLOCK (ABOUT) --- */
+.blue-block {
+    background-color: var(--byy-blue);
+    color: white;
+    padding: 80px 0;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    margin: 50px 0;
+}
+
+/* --- EDUCATION TIMELINE --- */
+.edu-item {
+    border-left: 4px dashed var(--byy-light);
+    padding-left: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.edu-item::before {
+    content: '●';
+    position: absolute;
+    left: -12px;
+    color: var(--byy-blue);
+    font-size: 20px;
+}
+
+/* --- PROJECT CARDS --- */
+.work-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.work-card:hover {
+    transform: translateY(-10px);
+}
+
+/* --- FOOTER & CONTACT --- */
+.footer-fun {
+    background: var(--byy-blue);
+    color: white;
+    border-radius: 50px 50px 0 0;
+    padding: 60px 0 20px 0;
+}
+
+.footer-fun .shadow {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
+}
